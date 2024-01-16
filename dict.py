@@ -59,13 +59,15 @@
 ##z = dict.fromkeys(x, y)
 ##
 ##print(z)
-user_input = input("Enter a string: ")
-
-user_dict = {}
+user_input = input("username : ")
+user_dict = {user_input}
+letter_count = {}
 for i in user_input:
-    user_dict[i] = ord(i)
-
-print("Resulting dictionary:", user_dict)
+    if i in letter_count:
+        letter_count[i] += 1
+    else:    
+        letter_count[i] = 1
+print(letter_count) 
 
 
 
