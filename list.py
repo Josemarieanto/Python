@@ -93,19 +93,23 @@
 ##for i in range () :
 ##    x = x * l[i]
 ##print("the sum : " , x)
-import math
 
-my_list = [3, 0, 5]
+l = [1,3,24,5,8]
+print(l)
+x = l[0]
+for i in  l:
+    if i < x:
+        x = i
+print("the smallest number : " , x)
 
-# Remove zeros from the list
-non_zero_list = [num for num in my_list if num != 0]
 
-# Calculate the product of the non-zero elements
-product = math.prod(non_zero_list)
-
-# Print the result
-print("Product of the non-zero elements:",product)
-
+l = [1,3,24,5,8]
+print(l)
+x = l[0]
+for i in  l:
+    if i > x:
+        x = i
+print("the largest number : " , x)
 
 
 
