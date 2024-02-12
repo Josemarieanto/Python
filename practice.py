@@ -251,6 +251,21 @@
 # sum = lambda a , b : a + b
 # print(sum(3,7))
 
+# def sum1(a):
+#     def sum2(b = None):
+#         if b is not None:
+#             return sum1(a + b)
+#         return a
+#     return sum2
+# result = sum1(4)()
+# result1 = sum1(2)(4)()
+# result2 = sum1(4)(6)(3)()
+# result3 = sum1(5)(10)(6)(4)()
+# print(result)
+# print(result1)
+# print(result2)
+# print(result3)
+
 
 
 
