@@ -194,24 +194,33 @@
     
 # output = filter(myfunc, x)
 # print(list(output))
-l = [1,2,3,4,5]
-def myfunc(l):
-    if l < 4:
-        return True
-    return False
+# l = [1,2,3,4,5]
+# def myfunc(l):
+#     if l < 4:
+#         return True
+#     return False
     
         
-def hof(l,func):
-    output = []
-    for i in l:
-        if(func(i)):
-            output.append(i)
-    return output
+# def hof(l,func):
+#     output = []
+#     for i in l:
+#         if(func(i)):
+#             output.append(i)
+#     return output
 
     
 
-print(list(filter(myfunc,l)))
+# print(list(filter(myfunc,l)))
 
+# def kLargest(arr, k):
+# 	arr.sort(reverse=True)
+# 	for i in range(k):
+# 		print(arr[i], end=" ")
+
+
+# arr = [1, 23, 12, 9, 30, 2, 50]
+# k = 3
+# kLargest(arr, k)
 
 
 
