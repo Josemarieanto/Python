@@ -108,3 +108,24 @@
 # os.rename(source,dest)
 ##f = open("test1.txt","r")
 ##print(f.read())
+# f1 = open("t1.txt","x")
+# f2 = open("t2.txt","x")
+# f3 = open("t3.txt","x")
+# f4 = open("t4.txt","x")
+# f5 = open("t5.txt","x")
+# f6 = open("t6.txt","x")
+# f7 = open("t7.txt","x")
+# f8 = open("t8.txt","x")
+# f9 = open("t9.txt","x")
+# f10 = open("t10.txt","x")
+
+# import os
+
+# for i in range(1, 11):
+#      os.remove(f"t{i}.txt")
+# print("all files were deleted")
+
+
+
+
+
