@@ -1,0 +1,387 @@
+# def a_smile,b_smile):
+#     if not weekday or vacation:
+#         return True
+#     else:
+#         return False
+    
+# print(sleep_in(False,False))
+# print(sleep_in(True,False))
+# print(sleep_in(False,True))
+
+# def sleep_in(a_smile,b_smile):
+#     if a_smile == b_smile:
+#         return True
+#     else:
+#         return False
+    
+# print(sleep_in(True,True))
+# print(sleep_in(False,False))
+# print(sleep_in(True,False))  
+
+# def diff21(n):
+#     if n < 21:
+#         return 21 - n
+#     elif n == 21:
+#         return 0
+#     else:
+#         return (n - 21)*2
+    
+# print(diff21(24))
+
+# def parrot_trouble(talking, hour):
+#     if (talking and (hour < 7 or hour > 20)):
+#         return True
+#     return False
+
+# print(parrot_trouble(False,21))
+
+# def makes10(a, b):
+#   if (a + b == 10) or (a == 10 or b == 10):
+#     return True
+#   return False
+# print(makes10(9,10))
+
+
+# def near_hundred(n):
+#     if abs(100 - n) <= 10 or abs(200 - n) <= 10:
+#         return True
+#     return False
+
+# # Examples:
+# print(near_hundred(93))   # Should return True
+# print(near_hundred(90))   # Should return True
+# print(near_hundred(89))   # Should return False
+
+# Given 2 int values, return True if one is negative and one is positive. Except 
+# if the parameter "negative" is True, then return True only if both are negative.
+
+# def pos_neg(a, b, negative):
+#     if negative:
+#         return a < 0 and b < 0
+#     else:
+#         return (a < 0 and b > 0) or (a > 0 and b < 0)
+
+
+# print(pos_neg(1, -1, False))
+# print(pos_neg(-1, 1, False))
+# print(pos_neg(-4, -5, True))
+
+# def not_string(str):
+#   if str.startswith("not"):
+#         return str
+#   else:
+#         return "not " + str
+# print(not_string("is not"))
+
+# def missing_char(str, n):
+#     # if 0 <= n < len(s):
+#     #     return s[:n] + s[n+1:]
+
+#   front = str[:n]   # up to but not including n
+#   back = str[n+1:]  # n+1 through end of string
+#   return front + back
+
+
+# print(missing_char('kitten', 1))  # Should return 'ktten'
+# print(missing_char('kitten', 0))  # Should return 'itten'
+# print(missing_char('kitten', 4))  # Should return 'kittn'
+
+# def string_exchange(str):
+#    if len(str) <= 1:
+#      return str
+#    mid = str[1:-1]
+#    return str[-1]+mid + str[0]
+# print(string_exchange("chocolate"))
+# print(string_exchange("girl"))
+
+# def front3(str):
+#    if len(str) <= 0:
+#       return str
+#    mid = str[0:3]
+#    return mid * 3
+# print(front3("java")) 
+
+# def string_times(str, n):
+#   result = ""
+#   for i in range(n):
+#         return str * n
+#   return result
+# print(string_times("hello",0))
+
+# def font_times(str,n):
+#    if len(str) <= 0:
+#       return str
+#    mid = str[0:n]
+#    return mid * n
+# print(font_times("chocolate",2)) 
+
+# def string_bits(str):
+#    return str[::2] 
+# print(string_bits("hello"))
+
+# def string_splosion(str):
+#   result = ""
+#   for i in range(len(str)):
+#     result += str[:i+1]
+#   return result
+
+# def array_count9(nums):
+#    return nums.count(9)
+# print(array_count9([1,9,9]))
+
+# def array_front9(nums):
+#    for i in range(0,4):
+#       if nums[i] == 9:
+#          return True
+#    return False
+  
+# print(array_front9([1,9,3,9,4,5,7]))
+# print(array_front9([1,2,3,4,5,8]))
+
+# def hello_name(name):
+#     return f'Hello {name}!'
+
+# # Test cases
+# result1 = hello_name('Bob')
+# print(result1)  # Output: 'Hello Bob!'
+
+# result2 = hello_name('Alice')
+# print(result2)  # Output: 'Hello Alice!'
+
+# result3 = hello_name('X')
+# print(result3)  # Output: 'Hello X!'
+# def make_tags(tag, word):
+#     if tag:
+#         return '<{}>{}</{}>'.format(tag, word, tag)
+#     else:
+#         return 'Invalid tag: {}'.format(tag)
+
+# # Examples
+# print(make_tags('i', 'Yay'))      # Output: '<i>Yay</i>'
+# print(make_tags('i', 'Hello'))    # Output: '<i>Hello</i>'
+# print(make_tags('cite', 'Yay'))   # Output: '<cite>Yay</cite>'
+# print(make_tags('', 'Invalid'))   # Output: 'Invalid tag: '
+
+# def make_out_word(out, word):
+#     return out[:2] + word + out[2:]
+
+# # Examples
+# print(make_out_word('<<>>', 'Yay'))      # Output: '<<Yay>>'
+# print(make_out_word('<<>>', 'WooHoo'))   # Output: '<<WooHoo>>'
+# print(make_out_word('[[]]', 'word'))    # Output: '[[word]]'
+
+# def first_two(str):
+#   if len(str) > 2:
+#    return (str[:2])
+#   elif len(str) == 2:
+#    return (str)
+#   else:
+#    return (" ")
+
+# print(first_two('Hello')) 
+# print(first_two('abcdefg'))
+# print(first_two('ab'))
+
+# def first_half(str):
+#     print(len(str) // 2)
+#     return str[: (len(str) // 2)]
+
+
+# print(first_half("helloqqbcj"))
+
+# def without_end(str):
+#    print(str[1:-1])
+
+# def same_first_last(nums):
+#   if nums[0] == nums[-1]:
+#    return True
+#   return False
+
+# print(same_first_last([1, 2, 3])) 
+# print(same_first_last([1, 2, 3, 1])) 
+# print(same_first_last([1, 2, 1])) 
+
+# def common_end(a, b):
+#    if len(a) >= 1 and len(b) >= 1:
+#       if a[0] == b[0] or a[-1] == b[-1]:
+#          return True
+#       return False   
+
+# print(common_end([1, 2, 3], [7, 3]))  
+# print(common_end([1, 2, 3], [7, 3, 2]))
+# print(common_end([1, 2, 3], [1, 3])) 
+
+# def rotate_left3(nums):
+#     # Return the array with elements rotated left
+#     return [nums[1], nums[2], nums[0]]
+
+# # Examples
+# print(rotate_left3([1, 2, 3]))    # Output: [2, 3, 1]
+# print(rotate_left3([5, 11, 9]))   # Output: [11, 9, 5]
+# print(rotate_left3([7, 0, 0]))    # Output: [0, 0, 7]
+
+# def squirrel_play(temp, is_summer):
+#     # Check if the temperature is between 60 and 90 (inclusive)
+#     # If it's summer, the upper bound is 100 instead of 90
+#     return (temp >= 60 and temp <= 90) or (is_summer )
+
+# # Test cases
+# print(squirrel_play(70, False))  # Output: True
+# print(squirrel_play(95, False))  # Output: False
+# print(squirrel_play(95, True))   # Output: True
+# print(squirrel_play(50, True))  # Output: False
+
+# def love6(a, b):
+#    if a == 6 or b == 6 or a + b == 6 or a -b == 6:
+#       return True
+#    return False 
+
+# print(love6(6, 4)) 
+# print(love6(4, 5))
+# print(love6(1, 7)) 
+
+# def in1to10(n, outside_mode):
+#    if outside_mode:
+#       return n <=1 or n >= 10
+#    else:
+#       return False
+   
+# print(in1to10(0, False))
+
+# def no_teen_sum(a, b, c):
+#   return (fix_teen(a) + fix_teen(b) + fix_teen(c))
+
+# def fix_teen(n):
+#    if n in (13, 14, 17, 18, 19):
+#       return 0
+#    return n
+
+# print(no_teen_sum(13,3,5))
+
+# def round_sum(a, b, c):
+#   return round10(a) + round10(b) + round10(c)
+  
+# def round10(num):
+#     remainder = num % 10
+#     if remainder >= 5:
+#       return num + (10 - remainder)
+#     else:
+#       return num - remainder
+
+
+# def close_far(a, b, c):
+#   if abs(b - a) <= 1 and abs(c - a) >= 2 and abs(c - b) >= 2:
+#     return True
+#   elif abs(c - a) <= 1 and abs(b - a) >= 2 and abs(b - c) >= 2:
+#     return True
+#   else:
+#     return False
+
+# def make_chocolate(small, big, goal):
+#   if(small + (big*5) < goal) or (goal % 5 > small):
+#     return -1
+#   if(big*5 < goal):
+#     return (goal - (big*5))
+#   return goal % 5
+      
+# def double_char(s):
+#     result = ''
+#     for char in s:
+#         result += char * 2
+#     return result
+# def double_char(str):
+#   result = ' '
+#   for i in str:
+#     result += i * 2
+#   return result
+
+# # # Test cases
+# print(double_char('The'))        # Output: 'TThhee'
+# print(double_char('AAbb'))       # Output: 'AAAAbbbb'
+# print(double_char('Hi-There'))   # Output: 'HHii--TThheerree'
+
+
+# def count_code(str):
+#   count = 0
+#   for i in range(len(str) - 3):
+#     if str[i:i+2] == "co" and str[i + 3] == "e":
+#       count += 1
+#   return count
+
+
+
+# print(count_code("xxcodegggcopenhuyugcoze"))
+
+# def end_other(a, b):
+#   a1 = a.lower()
+#   b1 = b.lower()
+ 
+#   if a1.endswith(b1) or b1.endswith(a1):
+#     return True
+#   else:
+#     return False
+
+
+# def count_evens(nums):
+#   result = 0
+#   for i in range(len(nums)):
+#     if nums[i] % 2 == 0:
+#       result += 1
+#   return result
+    
+
+# print(count_evens([1,2,3,4,5,6,8]))
+    
+# def big_diff(nums):
+#   x = max(nums)
+#   y = min(nums)
+#   return x - y
+
+# print(big_diff([10, 3, 5, 6]))
+# print(big_diff([7, 2, 10, 9]))
+# print(big_diff([2, 10, 7, 2]))
+
+# def sum13(nums):
+#   sum = 0
+#   for i in range (len(nums)):
+#     if nums[i] != 13:
+#       sum += nums[i]
+#     elif nums[i] == 13 and i < len(nums)-1:
+#       nums[i]=0;
+#       nums[i+1] =0
+            
+#   return sum 
+
+# def sum67(nums):
+#   x = False
+#   total = 0
+
+#   for num in nums:
+#     if num == 6:
+#       x = True
+#     elif num == 7 and x:
+#       x = False
+#     elif not x:
+#       total += num
+
+#   return total  
+
+# def has22(nums):
+#   for i in nums:
+#     if nums[i] == 2 and nums[i+1] == 2:
+#       return True
+#     return False
+  
+# print(has22([1,2,3]))
+# print(has22([1,2,2]))
+
+
+
+
+
+
+
+
+
+
+
