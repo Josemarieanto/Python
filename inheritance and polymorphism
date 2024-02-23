@@ -1,0 +1,106 @@
+#  single inheritance:
+
+# class senior_student:
+#     def sen1(self, name, dept):
+#         print(name ,"department was,",dept)
+
+# class junior_student(senior_student):
+#     def jun1(self,name,dept):
+#         print(name ,"department was,",dept)
+    
+# obj1 =  junior_student()
+# obj1.sen1("jose","Bcom")
+# obj1.jun1("vero","BCA")
+
+# multiple inheritance: 
+
+
+# class senior_student:
+#     def sen1(self, name, dept):
+#         print(name ,"department was,",dept)
+
+# class junior_student:
+#     def jun1(self,name,dept):
+#         print(name ,"department was,",dept)
+
+# class frstyear(senior_student,junior_student):
+#     def fyear(self,name,dept):
+#         print(name,"depatrment was,", dept)
+    
+# obj1 =  frstyear()
+# obj1.sen1("jose","Bcom")
+# obj1.jun1("vero","BCA")
+# obj1.fyear("abi", "Bcs")
+
+#  polymorphism with inheritance:
+
+
+# class employee:
+#     def __init__(self,name,sex,age):
+#         self.name = name
+#         self.sex = sex
+#         self.age = age
+#     def show(self):
+#         print("details : ",'name:' ,self.name, 'sex:',self.sex, 'age:', self.age)
+#     def wages(self):
+#         print("wages to be paid is 20000")
+#     def leave_taken(self):
+#         print("leave taken is two days.")
+# class manager(employee):
+#     def wages(self):
+#         print("wages to be paid is 30000")
+#     def leave_taken(self):
+#         print("leave taken is one day ")
+
+# manager = manager("john","male",3)
+# manager.show()
+# manager.wages()
+# manager.leave_taken()
+
+# employee= employee("josemarie","female",21)
+# employee.show()
+# employee.wages()
+# employee.leave_taken()  
+
+#  polymorphism with class:
+
+# class samsung:
+#     def price(self):
+#         print("the price of samsung is 20000")
+#     def version(self):
+#         print("galaxy j7")
+
+# class redme:
+#     def price(self):
+#         print("the price of redme is 25000")
+#     def version(self):
+#         print("note 11")
+
+# obj1 = redme()
+# obj2 = samsung()
+
+# for phone in (obj1,obj2):
+#     phone.price()
+    # phone.version()
+
+# polymorphism with function:
+
+# class car():
+#     def wheel(self):
+#         print("car has four wheels")
+#     def price(self):
+#         print("7 lakhs")
+# class truck():
+#     def wheel(self):
+#         print("truck has six wheels")
+#     def price(self):
+#         print("15 lakhs")
+
+# def func(obj):
+#     obj.wheel()
+#     obj.price()
+# obj1 = car()
+# obj2 = truck()
+
+# func(obj1)
+# func(obj2)
