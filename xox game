@@ -1,0 +1,62 @@
+board = ["_" for i in range(9)]
+def display_board():
+    print("|",board[0],"|",board[1],"|",board[2])
+    print("|",board[3],"|",board[4],"|",board[5])
+    print("|",board[6],"|",board[7],"|",board[8])
+
+player1 = "X"
+player2 = "O"
+
+def check_condition(players):
+    condition = [
+        [0,1,2],[3,4,5],[6,7,8],[0,3,6],
+        [1,4,7],[2,5,8],[0,4,8],[2,4,6]
+    ]
+    for i in condition:
+        if board[i[0]] == players and board[i[1]] == players and board[i[2]] == players:
+            return 1    
+    return 0
+
+def startgame():
+    display_board()
+    while True:
+        while True:
+            player1_opt = (input(f"{player1},enter the position: "))
+            if player1_opt not in [str(i) for i in range(1,10)]:
+                print("Enter position from[1 - 9]")
+                continue
+            if board[int(player1_opt) - 1] == "_":
+                board[int(player1_opt) - 1] = player1
+                display_board()
+                if check_condition(player1):
+                    print(f"{player1} won the game.") 
+                    exit()
+                break
+            else:
+                print("Already entered.")
+                
+
+        if len([i for i in board if i == "_"]) == 0:
+            return "Match drawn."
+
+
+        while True:
+            player2_opt = (input(f"{player2},enter the position: "))
+            if player2_opt not in [str(i) for i in range(1,10)]:
+                print("Enter position from[1 - 9]")
+                continue
+            if board[int(player2_opt) - 1] == "_":
+                board[int(player2_opt) - 1] = player2
+                display_board()
+                if check_condition(player2):
+                    print(f"{player2} won the game.") 
+                    exit()  
+                break 
+            else:
+                print("Already entered.")
+                
+            
+
+print(startgame())
+
+
