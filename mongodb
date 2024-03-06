@@ -1,0 +1,41 @@
+# from pymongo.mongo_client import MongoClient
+# from pymongo.server_api import ServerApi
+
+# uri = "mongodb+srv://josemarie:4Lj0jsay6Wl983QV@atlascluster.45jrjqo.mongodb.net/?retryWrites=true&w=majority&appName=AtlasCluster"
+
+# # Create a new client and connect to the server
+# client = MongoClient(uri, server_api=ServerApi('1'))
+
+# # Send a ping to confirm a successful connection
+# try:
+#     client.admin.command('ping')
+#     print("Pinged your deployment. You successfully connected to MongoDB!")
+# except Exception as e:
+#     print(e)
+
+
+# db = client["XYZ"]
+# # users = db["users"]
+
+# # details = {
+# #     "username": "john_doe",
+# #     "email": "john.doe@example.com",
+# #     "password": "hashed_password",
+# #     "address": {
+# #         "street": "123 Main St",
+# #         "city": "Cityville",
+# #         "zip": "12345",
+# #         "country": "Exampleland"
+# #         }
+# # }
+
+# product = db["products"]
+# details = {
+#     "name": "Laptop",
+#     "description": "Powerful laptop with high-performance features",
+#     "price": 999.99,
+#     "stock_quantity": 100,
+#     "category": "Electronics",
+#     "manufacturer": "TechCo"
+# }
+# product.insert_one(details)
