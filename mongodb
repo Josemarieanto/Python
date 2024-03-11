@@ -39,3 +39,17 @@
 #     "manufacturer": "TechCo"
 # }
 # product.insert_one(details)
+
+
+db = client["XYZ"]
+users = db["users"]
+
+# filter = {"_id": ObjectId("65e9dd799fd6e61b2510525d")}
+ 
+# filter = {"address.city": "Villageburg"}
+# result = users.find_one(filter)
+# print(result)
+
+filter = {"created_at.datetime": "2024-03-07T21:00:01.526+00:00"}
+result = users.find(filter)
+print(result)
