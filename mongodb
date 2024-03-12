@@ -53,3 +53,39 @@ users = db["users"]
 filter = {"created_at.datetime": "2024-03-07T21:00:01.526+00:00"}
 result = users.find(filter)
 print(result)
+
+#  filtered using regular expressions:
+
+# filter = { "username": { "$regex": "^s" }  }
+
+# result = users.find(filter)
+
+# for x in result:
+#   print(x,"\n")
+
+#  Delete one document:
+
+# filter = {"email":"samuel.clark@example.com" }
+
+# users.delete_one(filter)
+
+#  deelte multiple document:
+
+# filter = {"username": { "$regex": "^s" } }
+
+# users.delete_many(filter)
+    
+# db = client["XYZ"]
+# users = db["users"]
+#   update_one
+
+# myquery = { "username": "alice_jones" }
+# update = { "$set": { "username": "albert_joseph" } }
+
+# users.update_one(myquery, update)
+
+#   update_many
+
+# myquery = {"address.country": {"$regex": "^Testland"}}
+# update = {"$set": {"address.country": "Poland"}}
+# users.update_many(myquery, update)
