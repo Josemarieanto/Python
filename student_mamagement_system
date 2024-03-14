@@ -1,0 +1,171 @@
+from pymongo.mongo_client import MongoClient
+from pymongo.server_api import ServerApi
+
+
+uri = "mongodb+srv://josemarie:B4wZTxcgHYbPEvkw@atlascluster.45jrjqo.mongodb.net/?retryWrites=true&w=majority&appName=AtlasCluster"
+
+# Create a new client and connect to the server
+client = MongoClient(uri, server_api=ServerApi('1'))
+
+# Send a ping to confirm a successful connection
+try:
+    client.admin.command('ping')
+    print("Pinged your deployment. You successfully connected to MongoDB!")
+except Exception as e:
+    print(e)
+
+db = client["studentmanagent"]
+students = db["students"]
+
+details = [
+  {
+    "_id": "student_id_1",
+    "first_name": "John",
+    "last_name": "Doe",
+    "age": 20,
+    "gender": "Male",
+    "grade": "junior",
+    "major": "Computer Science",
+    "GPA": 3.5,
+    "courses": ["Introduction to Programming", "Linear Algebra", "English Composition"]
+  },
+  {
+    "_id": "student_id_2",
+    "first_name": "Jane",
+    "last_name": "Smith",
+    "age": 21,
+    "gender": "Female",
+    "grade": "senior",
+    "major": "Biology",
+    "GPA": 3.8,
+    "courses": ["Cell Biology", "Organic Chemistry", "Statistics"]
+  },
+  {
+    "_id": "student_id_3",
+    "first_name": "Alice",
+    "last_name": "Johnson",
+    "age": 19,
+    "gender": "Female",
+    "grade": "Fresher",
+    "major": "Psychology",
+    "GPA": 3.2,
+    "courses": ["Introduction to Psychology", "Sociology", "Calculus"]
+  },
+  {
+    "_id": "student_id_4",
+    "first_name": "Bob",
+    "last_name": "Brown",
+    "age": 22,
+    "gender": "Male",
+    "grade": "SuperSenior",
+    "major": "History",
+    "GPA": 3.4,
+    "courses": ["World History", "American History", "Historical Methods"]
+  },
+  {
+    "_id": "student_id_5",
+    "first_name": "Sarah",
+    "last_name": "Davis",
+    "age": 20,
+    "gender": "Female",
+    "grade": "junior",
+    "major": "English Literature",
+    "GPA": 3.7,
+    "courses": ["Shakespearean Literature", "Creative Writing", "British Romanticism"]
+  },
+  {
+    "_id": "student_id_6",
+    "first_name": "Michael",
+    "last_name": "Wilson",
+    "age": 21,
+    "gender": "Male",
+    "grade": "senior",
+    "major": "Chemistry",
+    "GPA": 3.9,
+    "courses": ["Physical Chemistry", "Inorganic Chemistry", "Analytical Chemistry"]
+  },
+  {
+    "_id": "student_id_7",
+    "first_name": "Emily",
+    "last_name": "Martinez",
+    "age": 19,
+    "gender": "Female",
+    "grade": "Fresher",
+    "major": "Mathematics",
+    "GPA": 3.6,
+    "courses": ["Calculus I", "Calculus II", "Discrete Mathematics"]
+  },
+  {
+    "_id": "student_id_8",
+    "first_name": "David",
+    "last_name": "Garcia",
+    "age": 20,
+    "gender": "Male",
+    "grade": "junior",
+    "major": "Physics",
+    "GPA": 3.3,
+    "courses": ["Classical Mechanics", "Electromagnetism", "Quantum Mechanics"]
+  },
+  {
+    "_id": "student_id_9",
+    "first_name": "Olivia",
+    "last_name": "Hernandez",
+    "age": 22,
+    "gender": "Female",
+    "grade": "SuperSenior",
+    "major": "Art History",
+    "GPA": 3.1,
+    "courses": ["Renaissance Art", "Modern Art", "Contemporary Art"]
+  },
+  {
+    "_id": "student_id_10",
+    "first_name": "James",
+    "last_name": "Lopez",
+    "age": 21,
+    "gender": "Male",
+    "grade": "senior",
+    "major": "Economics",
+    "GPA": 3.8,
+    "courses": ["Microeconomics", "Macroeconomics", "Game Theory"]
+  }
+]
+#  1. ACCEPT:
+
+# def accept_details():
+#     students.insert_many(details)
+#     print("Students details accepted successfully.")
+# accept_details()
+
+#  2. DISPLAY:
+
+# def display_students():
+#     print("List of Students:")
+#     for i in students.find():
+#         print(i,"\n")
+# display_students()
+
+#  3. search:
+
+# def search():
+#     filter = {"major": "Chemistry"}
+#     s = students.find_one(filter)
+#     print(s)
+# search()
+
+#  4. delete:
+
+# def delete_student():
+#     remove = {"_id": "student_id_10"}
+#     students.delete_one(remove)
+#     print("Student deleted successfully.")
+# delete_student()
+
+#  5. update:
+
+# def update_student():
+#     myquery = { "first_name": "Michael" }
+#     update = { "$set": { "first_name": "Albert" } }
+#     x = students.update_one(myquery, update)
+#     print(x)
+# update_student()
+
