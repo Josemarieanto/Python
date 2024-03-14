@@ -168,4 +168,33 @@ details = [
 #     x = students.update_one(myquery, update)
 #     print(x)
 # update_student()
+def main():
+    while True:
+        print("\n1. Accept Student")
+        print("2. Display Students")
+        print("3. Search Student")
+        print("4. Delete Student")
+        print("5. Update")
+
+        choice = int(input("Enter your choice: "))
+
+        if choice == 1:
+            accept_details()
+        elif choice == 2:
+            display_students()
+        elif choice == 3:
+            search()
+        elif choice == 4:
+            delete_student()
+        elif choice == 5:
+            update_student()
+            
+            
+        else:
+            print("Invalid choice. Please try again.")
+
+        break
+
+if __name__ == "__main__":
+    main()
 
