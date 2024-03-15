@@ -33,8 +33,19 @@ def play_game():
         user_choice = get_user_choice()
         computer_choice = get_computer_choice()
 
-        print("You chose ",user_choice )
-        print("The computer chose ",computer_choice)
+        if user_choice == 0:
+            print("You chose rock." )
+        elif user_choice == 1:
+            print("you chose paper.") 
+        else:
+            print("you chose scissors. ")
+        
+        if computer_choice == 0:
+            print("computer chose rock." )
+        elif computer_choice == 1:
+            print("computer chose paper.") 
+        else:
+            print("computer chose scissors. ")
 
         result, user_points, computer_points = determine_winner(user_choice, computer_choice)
         print(result)
