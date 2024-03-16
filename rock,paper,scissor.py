@@ -22,6 +22,17 @@ def determine_winner(user_choice, computer_choice):
     else:
         return "You lose!", 0,1
 
+def print_score_box(user_score, computer_score):
+    print("|----------------------------------------|")
+
+    print("|               SCOREBOARD               |")
+
+    print("|----------------------------------------|")
+    print("|     You            |       Computer    |")
+    print("|----------------------------------------|")
+    print(f"|      {user_score}             |       {computer_score}           |")
+    print("|----------------------------------------|")
+
 def play_game():
     user_score = 0
     computer_score = 0
@@ -53,8 +64,7 @@ def play_game():
         user_score += user_points
         computer_score += computer_points
 
-        print("Your score: ",user_score)
-        print("Computer's score: ",computer_score)
+        print_score_box(user_score, computer_score)
 
     print("\nGame over!")
     print("Your total score: ",user_score)
