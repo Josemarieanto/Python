@@ -1,0 +1,27 @@
+books = {
+    "Fiction": ["The Great Gatsby", "Emma", "1984", "The lord of the rings", "Finding Me"],
+    "story books": ["The fault in our stars", "Harry potter", "The thursday murder club", "Nine perfect strangers", "The Fox an dthe Grapes"],
+    "Horror": ["The Shining", "Dracula", "The Hunger", "Ghost story", "Frankenstein"],
+    "Historical": ["Guns,Germs and steel", "The Guns of August", "The book Thief", "The Devil in the white city", "1776"]
+}
+
+print("Shopkeeper : Hello! Welcome to our bookshop. How can I help you Today ?")
+user = input("Customer : [hello / recommend books]")
+while True:
+    if user == "hello":
+        print("Shopkeeper : Hello! Welcome to our bookshop. How can I help you Today ?")
+    elif user == "recommend books":
+        print("Shopkeeper : Here are some of the book collections in our shop:\n",books)
+        user_choice = input("customer : [select from collections]")
+        if user_choice in books:
+            customer = input("Shopkeeper : Nice selection,Do you want to buy now ?[y/n]\n Customer : ")
+        if customer == "y":
+            shopkeeper = input("Shopkeeper : ready cash / phonepay \n Customer : ") 
+        if shopkeeper == "ready cash" or "phonepay":
+            print(" Shopkeeper : Thank you for visiting our bookshop. Have a great day!")
+            break
+        else:
+            print("No credit facility is provided")
+    else:
+        print("Shopkeeper : We don't have",user_choice,"collections. select from the given collection of books.")
+        break
