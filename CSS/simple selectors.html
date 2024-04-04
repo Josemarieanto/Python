@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>selector</title>
+    <style>
+        p {
+            color: blue;
+            height: 200px;
+            width: 250px;
+            border: 50px;
+            background-color: aquamarine;
+        }
+        #lorem{
+            color: black;
+            height: 150px;
+            width: 150px;
+            border: 50px;
+            background-color: wheat;
+
+        }
+        .test{
+            color: red;
+            height: 150px;
+            width: 150px;
+            border: 50px;
+            background-color: blanchedalmond;
+
+        }
+        * {
+            font-style: italic;
+
+        }
+        section,small{
+            color: blueviolet;
+            height: 100px;
+            width: 150px;
+            border: 50px;
+            background-color: brown;
+
+        }
+        section p{
+            background-color: yellow;
+            color: red;
+
+        }
+
+    </style>
+  </head>
+  <body>
+    <h1>Simple selector</h1>
+    <h3>1.Element selector</h3>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam
+        officiis magni nam eveniet et doloribus ratione rem ducimus voluptate
+        nesciunt molestias enim, incidunt distinctio explicabo fugiat accusamus
+        recusandae tempora laudantium?
+      </p>
+    </div>
+
+    <h3>2.ID selector</h3>
+    <div>
+      <p id="lorem">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam
+        officiis magni nam eveniet et doloribus ratione rem ducimus voluptate
+        nesciunt 
+      </p>
+    </div>
+
+    <h3>3.Class selector</h3>
+    <div>
+      <p class="test">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam
+        officiis magni nam eveniet et doloribus ratione rem ducimus voluptate
+        nesciunt 
+      </p>
+    </div>
+
+    <h3>4.Universal selector</h3>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam
+        officiis magni nam eveniet et doloribus ratione rem ducimus voluptate
+        nesciunt 
+      </p>
+      <section>Hello world,I am Josemarie.</section>
+    </div>
+
+    <h3>5.Grouping selector</h3>
+    <div>
+      <p>
+        <small>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Numquam
+        officiis magni nam eveniet et doloribus ratione rem ducimus voluptate
+        nesciunt
+        </small>
+      </p>
+    </div>
+    
+  </body>
+</html>

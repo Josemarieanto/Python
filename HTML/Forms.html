@@ -1,0 +1,127 @@
+<html>
+    <head>
+        <title>Document</title>
+    </head>
+    <body>
+        <h2>Input types:</h2>
+        
+        <form>
+            <h3>1.Button</h3>
+            <label for="Username">Username</label>
+            <input type="text" id="Username" required><br><br>
+            <label for="Email">Email</label>
+            <input type="email" id="Email" required><br><br>
+            <label for="Password">Password</label>
+            <input type="password" id="Password" required><br><br>
+            <button>Submit</button><br><br>
+
+            <h3>2.Checkbox</h3>
+            <h5>Select the names of Fruits</h5>
+            <input type="checkbox" id="Apple">
+            <label for="Apple">Apple</label>
+            <input type="checkbox" id="Orange">
+            <label for="Orange">Orange</label>
+            <input type="checkbox" id="Mango">
+            <label for="Mango">Mango</label>
+            <input type="checkbox" id="Onion">
+            <label for="Onion">Onion</label><br><br>
+
+            <h3>3.Color</h3>
+            <label for="favcolor">Select your favcolor</label>
+            <input type="color" id="color" name="favcolor">
+            <button>Submit</button><br><br>
+
+            <h3>4.Date</h3>
+            <label for="date">Enter your D.O.B</label>
+            <input type="date" id="Date" name="date">
+            <button>Submit</button><br><br>
+
+            <h3>5.Datetime-local</h3>
+            <label for="datetime-local">Birthday (date and time)</label>
+            <input type="datetime-local" id="datetime-local" name="datetime-local">
+            <button>Submit</button><br><br>
+
+            <h3>6.File</h3>
+            <label for="File">Select your file</label>
+            <input type="file" id="File" name="file">
+            <button>Submit</button><br><br>
+
+            <h3>7.Hidden</h3>
+            <label for="Username">Username:</label>
+            <input type="text" id="Username" name="Username"><br><br>
+            <input type="hidden" id="custId" name="custId" value="1234">
+            <button>Submit</button><br><br>
+
+            <h3>8.Image</h3>
+            <label for="Username">Username</label>
+            <input type="text" id="Username" name="Username"><br><br>
+            <label for="password">password</label>
+            <input type="text" id="password" name="password"><br><br>
+            <input type="image" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASMAAACtCAMAAADMM+kDAAAAw1BMVEX///9wrEwAAABRiSw0Wjk5VCFysEzi5uOSmpPMzcyLnI0AHwCmpqaNkI6epZ4AGAAZIhcgLSEjORk4VCQjNh86YyNTez0ZHhlIbTQ9YTBtqU1llFFUdkuHkYgZJA5GZjlKazlmoEhmoUgpPyEuRygvSiUfLht9kH8vSSladl1nfWkAHAAAFQCYopkQGA+Tn5RflkMhMRuHnImGloh3jnooVS6crZ7Q19EVVR+uua8AIwAOEg8tPClVekpwi3N6jHxPb1IWNK09AAAEgklEQVR4nO2dfXfTNhhHo9AmjI2SshaoYYOkoSujBJeNdzb2/T/VWteSJVuPHmVnHJv43n+jkyj3yD9bsl4mk91h/vKg7yoMnvnFFEkK83vT6au+KzFwrh0hKU3lCElJbhwhKUXtiOBOYB1NX/ddk+HiHHG5iTSOkCThOeJyE/Ad0ZLiVI42J89pSTKVo8Xj5RGSRGpHs3KBJAnryBQbJAk4R7PlJcEdxzkypjylJUXxHJmyDu47fVdqYPiOTHl2I+lN37UaFoEjUyxoSV1CRy64keQROmqCG0kNbUdOEpnk6DgiuDt0HbngRlJNxJFZEdwBMUcEd0jUkZP0R9/VGwRxR6a8JJMcgiOzOkSSRXJkCoLbIjoyS4K7Rnbkgvu3vuvYNwlHbjxp7JmUcmRWZ7SkieLIFGc8J2mOXHCPWpLiiOCe6I5cS/qz75r2h+rIBfd4JemOjBn73S3H0WrkwZ3jyCzXo25JWY7+S3DvNbx9F370/u3eXuLjyeRdWMDnQ/eXPsqlY7+TW9zjU44jN3ybL2nqcTv86IdpSKfX/MtU5F73l36SS4fcrYof5BYP0R0Zs60k//v/R0c/DtnRtsHtf/9YHJllPWcyM7j9798FR5scR65b8ne2o8/n6+rZKuZocb5er08XsqMvT5+FHCUcfV4/TbJuOfryZFv+WmYourrc6vGkrEy6Lni4v39fcvTr/hU/H8mOjm+1eJBw9PBRu3TIccvRiZltS5aiK7aQNHBHRe5f3poifxRgtI62CO7xOnLdkt9xJGODW7u7jdmRMadZLWncjmxwf8WRjA3upKSRO3KSUpfb2B258aREcI/eUUZw48hJEjMJR3pw48iowY2jSlIyk3BUUdR9txc4SpAIbhzVrOTgxpFFDm4cNZKkTMJRgxTcOPKJPwLgyCce3DgKiAY3jkJsS/IzCUctiq4kHHXoXG446lC0gxtHXdrBjaMINrj/wZFMEUjCURz/7oajOMV5k0k4EiibvhuONEkvcCQye1zvC4AjEdpRtiLySIT7mg7PRxo8Z6vQX1Oh36/C+JEO45AajGer8F5EhfdrKryn1eF9vwbzRlSYf6QrYh6bBvMhdZhXq8H8bBXm+euKWC+Sq4h1RzKsX8tVxDpIEdbT6opYl52riPX9IuwTocN+IxrsW6PC/ke6IvbR0tid/dgGs68f+0Pqjizj2Wc0owOyw47Yr1bnO9r3eKf2z2Yf9lHxzfbz3yE4F0KH80V0OKdGh/OOdDg3S4fz13Q4x0+H8yB1OFdUh/NpdTjnWIfzsnU4d11HcrQ6JIssgqPyEkWOuKOSR0ePqKOSuPaJOVoR1wERR8WCLAroOirPUBTScWSzCEWOtiPiukvoaLYkrruEjmxco8gncERcR/Ed2fEiWlGI58jG9eu+6zQ0nCMX16/6rtLgcI6KDa1IwDoqFyiSqB3ZuEZRhMrR5uQ5imQqRxbiOorviFYUx3NEKxJoHKFIwjniQhOxjg76rsiAqR1xoSW4cYSiFJUjFCW5doSiNPML4lpj/vLbKPoXC5dmSBoVjaQAAAAASUVORK5CYII=" alt="Submit" width = "30">
+
+            <h3>9.Month</h3>
+            <label for="Month">Birthday(Month and Year)</label>
+            <input type="month" id="month" name="month">
+            <button>Submit</button><br><br>
+
+            <h3>10.Number</h3>
+            <label for="Age">Enter your age</label>
+            <input type="number" id="Age" name="Age">
+            <button>Submit</button><br><br>
+
+            <h3>11.RadioButtons</h3>
+            <h5>Which is your favcolor?</h5>
+            <input type="radio" id="Red" name="favcolor">
+            <label for="Red">Red</label>
+            <input type="radio" id="Blue" name="favcolor">
+            <label for="Blue">Blue</label>
+            <input type="radio" id="Black" name="favcolor">
+            <label for="Black">Black</label>
+            <input type="radio" id="Pink" name="favcolor">
+            <label for="Pink">Pink</label><br><br>
+
+            <h3>12.Range</h3>
+            <label for="volume">volume</label>
+            <input type="range" id="volume" name="volume" min="0" max="100">
+            <button>Submit</button><br><br>
+
+            <h3>13.Reset</h3>
+            <label for="Username">Username</label>
+            <input type="text" id="Username" required><br><br>
+            <label for="Email">Email</label>
+            <input type="email" id="Email" required><br><br>
+            <label for="Password">Password</label>
+            <input type="password" id="Password" required><br><br>
+            <button>Submit</button>
+            <button>Reset</button><br><br>
+
+            <h3>14.Search</h3>
+            <label for="Search">Google Search</label>
+            <input type="search" id="Search" name="search">
+            <button>Submit</button>
+
+            <h3>15.Tel</h3>
+            <label for="Telephone number">Telephone Number</label>
+            <input type="tel" id="Telephone number" name="Telephone number">
+            <button>Submit</button>
+
+            <h3>16.Time</h3>
+            <label for="time">Enter the time</label>
+            <input type="time" id="time" name="time">
+            <button>Submit</button>
+
+            <h3>17.URL</h3>
+            <label for="URL">Enter the URL</label>
+            <input type="url" id="URL" name="URL">
+            <button>Submit</button>
+
+            <h3>18.Week</h3>
+            <label for="Week">select the Week</label>
+            <input type="Week" id="Week" name="Week">
+            <button>Submit</button>
+
+
+            
+    </form>
+    </body>
+</html>

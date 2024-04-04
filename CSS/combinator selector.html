@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section p{
+            background-color: yellow;
+            color: red;
+        } 
+        div > p{
+            background-color: aquamarine;
+        }
+        section + div{
+            background-color: burlywood;
+        }
+        section ~ div{
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Combinator selector</h1>
+    <h3>1.Descendant selector</h3>
+    <section>
+        <p>Hello world 1</p>
+        <code>
+            <p>Hello world 2</p>
+            <p>Hello world 3</p>
+        </code>
+        </section>
+    <div>
+        <p>Hello world 4</p>
+        <p>Hello world 5</p>
+    </div>
+
+    <h3>2.child selector</h3>
+    <section>
+        <p>Hello world 1</p>
+        <code>
+            <p>Hello world 2</p>
+            <p>Hello world 3</p>
+        </code>
+        </section>
+    <div>
+        <p>Hello world 4</p>
+        <p>Hello world 5</p>
+    </div>
+
+    <h3>3.Adjacent sibling selector</h3>
+    <section>
+        <p>Hello world 1</p>
+        <code>
+            <p>Hello world 2</p>
+            <p>Hello world 3</p>
+        </code>
+        </section>
+    <div>
+        <p>Hello world 4</p>
+        <p>Hello world 5</p>
+    </div>
+    <p>Hello world 6</p>
+    <div>Hello world 7</div>
+
+    <h3>4.General sibling selector</h3>
+    <section>
+        <p>Hello world 1</p>
+        <code>
+            <p>Hello world 2</p>
+            <p>Hello world 3</p>
+        </code>
+        </section>
+    <div>
+        <p>Hello world 4</p>
+        <p>Hello world 5</p>
+    </div>
+    <p>Hello world 6</p>
+    <div>Hello world 7</div>
+        
+    
+    
+</body>
+</html>
