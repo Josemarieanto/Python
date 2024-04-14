@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background-color:whitesmoke;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+            gap: 20px;
+            font-family: monospace;
+        }
+        .cards{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 50%;
+            box-shadow: 8px 8px aquamarine;
+            border-radius: 0.8rem;
+            border: 8px solid;
+
+        }
+        .cards img{
+            object-fit: cover;
+            border-bottom: 8px solid black;
+        }
+        
+        .content{
+            padding: 20px 20px 20px 20px;
+            background-color:hsl(187 70% 85%);
+        }
+
+        button{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background-color: hsl(187 70% 85%);
+            border: 3px solid black ; 
+            border-radius: 5px;
+            margin-left: 150px;  
+        }
+
+        button:hover{
+            background-color:hsl(188, 99%, 47%) ;
+        }
+        h2:hover{
+            color: blueviolet;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <article class="cards">
+        <img src='https://images.unsplash.com/photo-1600078686889-8c42747c25fe?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0NDMzMjg5Nw&ixlib=rb-1.2.1&q=80&w=400' alt='Bluetit'>
+        <div class="content">
+            <h2>This is a bird.</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus error officiis porro quos fugit, harum ab officia.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <button>Read all about it</button>
+        </div>
+    </article>
+    
+    <article class="cards">
+        <img src='https://images.unsplash.com/photo-1569762825621-2dab96140a1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTY0NDMzNDkxMQ&ixlib=rb-1.2.1&q=80&w=400' alt='Small blue-grey yellow-breasted bird'>
+        <div class="content">
+            <h2>This is a bird.</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus error officiis porro quos fugit, harum ab officia.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <button>Read all about it</button>
+        </div>
+    </article>
+</body>
+</html>
