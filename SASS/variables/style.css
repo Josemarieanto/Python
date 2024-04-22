@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+html body {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(375deg, #1cc7d0, #1cc7d0);
+}
+
+.wrapper {
+  height: 400px;
+  width: 320px;
+  position: relative;
+}
+.wrapper .card-front {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: white;
+  border-radius: 10px;
+}
+
+.card-front img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}/*# sourceMappingURL=style.css.map */

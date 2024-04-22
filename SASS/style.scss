@@ -1,0 +1,77 @@
+.main{
+    max-width: 1400px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    height: 370px;
+    width: 250px;
+    border: 2px solid black;
+    border-radius: 10px;
+    max-width: 400px;
+
+}
+
+.logo a{
+    position: relative;
+    left: 110px;
+    top: 10px;
+}
+
+.logo {
+    a{
+        ion-icon{
+            color: black;
+            font-size: 50px;
+        }
+    }
+
+    h2{
+        font-weight: bold;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        padding-top: 5px;
+    }
+}
+
+.content p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-size: 14px;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    width: 180px;
+    height: 30px;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    letter-spacing: 2px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 0.3s ease;
+}
+
+.card:hover{
+    .logo a ion-icon{
+        color: white;
+    }
+
+    button{
+        background-color: white;
+        color: rgb(235, 46, 109);
+    }
+    background-color: rgb(238, 51, 114);
+    color: white;
+}
+

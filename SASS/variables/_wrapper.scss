@@ -1,0 +1,13 @@
+.wrapper{
+    height: 400px;
+    width: 320px;
+    position: relative;
+    
+    .card-front{
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        background: white;
+        border-radius: 10px;
+    }
+}

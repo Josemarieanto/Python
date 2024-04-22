@@ -1,0 +1,1 @@
+html body{display:flex;justify-content:center;height:100%;width:100%;background:linear-gradient(375deg, #1cc7d0, #1cc7d0)}.wrapper{height:400px;width:320px;position:relative}.wrapper .card-front{height:100%;width:100%;position:absolute;background:white;border-radius:10px}
