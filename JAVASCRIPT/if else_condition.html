@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // // 1. Odd or Even:
+        // let a = 10;
+        // if(a % 2 == 0){
+        //     output = `${a} is even number.`;
+        // }else{
+        //     output = `${a} is odd number.`;
+        // }
+        // console.log(output);
+
+        // // 2. maximum or minimum:
+        // let num1 = 10; num2 = 20;
+        // if(num1>num2){
+        //     console.log("num1 is maximum");
+        // }else if(num1<num2){
+        //     console.log("num2 is maximum");
+        // }else{
+        //     console.log("num1 and num2 are equal.");
+        // }
+
+        // // 3. positive or negative:
+        // let b = 35;
+        // if(b > 0){
+        //     result = `${b} is positive.`;
+        // }else if(b == 0){
+        //     result = `The number is zero .`;
+        // }else{
+        //     result = `${b} is negative.`;
+        // }
+        // console.log(result);
+
+        // // 4.divisible by 5 and 11:
+        // let c = 55;
+        // if((c % 5 == 0) && (c % 11 == 0)){
+        //     conclusion = `${c} is divisible by both 5 and 11.`;
+        // }else{
+        //     conclusion = `${c} is not divisiible by 5 and 11.`;
+        // }
+        // console.log(conclusion);
+
+        // // 5. week number and week day:
+
+        // let week = 5;
+        // if(week == 1){
+        //     console.log("Monday");
+        // }else if(week == 2){
+        //     console.log("Tuesday");
+        // }else if(week == 3){
+        //     console.log("Wednesday");
+        // }else if(week == 4){
+        //     console.log("Thursday");
+        // }else if(week == 5){
+        //     console.log("Friday");
+        // }else if(week == 6){
+        //     console.log("Saturday")
+        // }else if (week == 7){
+        //     console.log("Sunday");
+        // }else{
+        //     console.log("Invalid");
+        // }
+        
+
+        // 6. leap year or not:
+        // let year = parseInt(prompt("Enter the year: "));
+        // if (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0)){
+        //     console.log(`${year} is a leap year`);
+        // }else{
+        //     console.log(`${year} is not a leap year`);
+        // }
+
+        // 7. alphabet or not:
+        // let alpha = prompt("Enter the character: ");
+        // if (((alpha >= "a") && (alpha <= "z")) || ((alpha >= "A") && (alpha <= "Z"))){
+        //     console.log(`${alpha} is an alphabet`);
+        // }else{
+        //     console.log(`${alpha} is not an alphabet`);
+        // }
+
+        // 8. vowel or consonant:
+        // let ch = prompt("Enter the character: ");
+        // if(ch == "a" || ch == "e" || ch == "i" || ch == "o" || ch == "u"){
+        //     console.log(`${ch} is a vowel`);
+        // }else if(((ch >= "a") && (ch <= "z")) || ((ch >= "A") && (ch <= "Z"))){
+        //     console.log(`${ch} is consonant`);
+        // }else{
+        //     console.log(`${ch} is not an alphabet`);
+        // }
+
+        // 9. alphabet or digit or special character:
+        // let chr = prompt("Enter the character: ");
+        // if (((chr >= "a") && (chr <= "z")) || ((chr >= "A") && (chr <= "Z"))){
+        //     console.log(`${chr} is an alphabet`);
+        // }else if(chr >= "0" && chr<= "9"){
+        //     console.log(`${chr} is digit`);
+        // }else{
+        //     console.log(`${chr} is a special character`);
+        // } 
+
+        // 10. uppercase or lowercase:
+        // let a = prompt("enter the character: ");
+        // if((a >= "a") && (a <= "z")){
+        //     console.log("The character is in lowercase");
+        // }else{
+        //     console.log("The character is in uppercase"); 
+        // }
+
+        // 11. Month number and no.of days:
+        // let Month = parseInt(prompt("enter the month no: "));
+        // if (Month == 1 || Month == 3 || Month == 5 || Month == 7 || Month == 8 || Month == 10 || Month == 12){
+        //     console.log("Contains 31 days");
+        // }else if(Month == 2){
+        //     console.log("contains 28 or 29 days");
+        // }else if(Month == 4 || Month == 6 || Month == 9 || Month == 11){
+        //     console.log("Contains 30 days");
+        // }else{
+        //     console.log("Invalid number.");
+        // }
+
+        // 12. maximum between three numbers:
+        // let num1 = parseInt(prompt("Enter the num1: "));
+        // let num2 = parseInt(prompt("Enter the num2: "));
+        // let num3 = parseInt(prompt("Enter the num3: "));
+        // console.log("num1:"+ num1);
+        // console.log("num2:"+ num2);
+        // console.log("num3:"+ num3);
+        // if(num1>num2){
+        //     if(num1>num3){
+        //         console.log(`${num1} is maximum`);
+        //     }else{
+        //         console.log(`${num3} is maximum`);
+        //     }
+        // }else{
+        //     if(num2>num3){
+        //         console.log(`${num2} is maximum`);
+        //     }else{
+        //         console.log(`${num3} is maximum`);
+        //     }
+        // }
+
+        // // 13.total no of notes:
+        // let amount = parseInt(prompt("Enter the amount: "));
+        // console.log(amount);
+        // let note500, note100, note50, note20, note10, note5, note2, note1;
+        // note500 = note100 = note50 = note20 = note10  = note5 = note2 = note1 = 0;
+        // if(amount>= 500){
+        //     note500 = Math.floor(amount/500);
+        //     amount -= note500 * 500
+        // }
+        // if(amount>= 100){
+        //     note100 = Math.floor(amount/100);
+        //     amount -= note100 * 100
+        // }
+        // if(amount>= 50){
+        //     note50 = Math.floor(amount/50);
+        //     amount -= note50 * 50
+        // }
+        // if(amount>= 20){
+        //     note20 = Math.floor(amount/20);
+        //     amount -= note20 * 20
+        // }
+        // if(amount>= 10){
+        //     note10 = Math.floor(amount/10);
+        //     amount -= note10 * 10
+        // }
+        // if(amount>= 5){
+        //     note5 = Math.floor(amount/5);
+        //     amount -= note5 * 5
+        // }
+        // if(amount>= 2){
+        //     note2 = Math.floor(amount/2);
+        //     amount -= note2 * 2
+        // }
+        // if(amount>= 1){
+        //     note1 = amount;
+        // }
+        // console.log("total no of notes:");
+        // console.log(`500 = ${note500}`);
+        // console.log(`100 = ${note100}`);
+        // console.log(`50 = ${note50}`);
+        // console.log(`20 = ${note20}`);
+        // console.log(`10 = ${note10}`);
+        // console.log(`5 = ${note5}`);
+        // console.log(`2 = ${note2}`);
+        // console.log(`1 = ${note1}`);
+
+        // // 14. valid or invalid triangle:
+
+        // let angle1 = parseInt(prompt("Enter the angle1 of a triangle: "))
+        // let angle2 = parseInt(prompt("Enter the angle2 of a triangle: "))
+        // let angle3 = parseInt(prompt("Enter the angle3 of a triangle: "))
+        // console.log("angle1:"+angle1);
+        // console.log("angle2:"+angle2);
+        // console.log("angle3:"+angle3);
+        // let sum = angle1 + angle2 + angle3;
+        // if(sum == 180 && angle1>0 && angle2>0 && angle3>0){
+        //     console.log("Triangle is valid");
+        // }else{
+        //     console.log("Triangle is invalid");
+        // }
+       
+
+       // // 15. valid or invalid sides of triangle:
+
+        // let side1 = parseInt(prompt("Enter the side1 of a triangle: "))
+        // let side2 = parseInt(prompt("Enter the side2 of a triangle: "))
+        // let side3 = parseInt(prompt("Enter the side3 of a triangle: "))
+        // console.log("side1:"+side1);
+        // console.log("side2:"+side2);
+        // console.log("side3:"+side3);
+        // if(side1 + side2 > side3 && side1 + side3 > side2 && side2 + side3 > side1){
+        //     console.log("Triangle is valid");
+        // }else{
+        //     console.log("Triangle is invalid");
+        // }
+
+        // 16. equilateral, scalene or isoscels:
+        // let side1 = parseInt(prompt("Enter the side1 of a triangle: "))
+        // let side2 = parseInt(prompt("Enter the side2 of a triangle: "))
+        // let side3 = parseInt(prompt("Enter the side3 of a triangle: "))
+        // console.log("side1:"+side1);
+        // console.log("side2:"+side2);
+        // console.log("side3:"+side3);
+        // if(side1 == side2 && side2 == side3){
+        //     console.log("All sides are equal, so Equilateral Triangle");
+        // }else if(side1 == side2 || side1 == side3 || side2 == side3){
+        //     console.log(" only two sides are equal,so Isosceles Triangle");
+        // }else{
+        //     console.log("Scalene triangle");
+        // }
+
+        // 17. calculation of Profit / loss:
+        // let cp = parseInt(prompt("enter the cp:"));
+        // let sp = parseInt(prompt("enter the sp:"));
+        // let amount = sp - cp
+        // console.log("cost price = " + cp);
+        // console.log("selling price = " + sp);
+        // if(sp > cp){
+        //     console.log("profit is " + amount);
+        // }else if(sp < cp){
+        //     console.log("loss is " + amount);
+        // }else{
+        //     console.log("No profit No loss");
+        // }
+
+        // 18. percentage and grade:
+        // let phy = parseInt(prompt("Enter the physics mark: "));
+        // let chem = parseInt(prompt("Enter the chemistry mark: "));
+        // let bio = parseInt(prompt("Enter the biology mark: "));
+        // let math = parseInt(prompt("Enter the maths mark: "));
+        // let comp = parseInt(prompt("Enter the  computer science mark: "));
+        // let percentage = (phy + chem + bio + math + comp) / 5.0;
+        // if(percentage >= 90){
+        //     console.log("Grade A");
+        // }else if(percentage >= 80){
+        //     console.log("Grade B");
+        // }else if(percentage >= 70){
+        //     console.log("Grade C");
+        // }else if(percentage >= 60){
+        //     console.log("Grade D");
+        // }else if(percentage >= 40){
+        //     console.log("Grade E");
+        // }else{
+        //     console.log("Grade F");
+        // }
+
+        // 19.gross salary of an employee:
+        // let bs = parseInt(prompt("Enter the basic salary: "));
+        // console.log("Basic salary"+ bs);
+        // let da, hra, gs;
+        // if(bs <= 10000){
+        //     da = bs * 0.8;
+        //     hra = bs * 0.2;
+        // }else if(bs <= 20000){
+        //     da = bs * 0.9;
+        //     hra = bs * 0.25;
+        // }else{
+        //     da = bs * 0.95;
+        //     hra = bs * 0.3;
+        // }
+
+        // gs = bs + da + hra;
+        // console.log("Gross salary of an employee: " + gs);
+
+
+
+
+
+</script>
+    
+</body>
+</html>

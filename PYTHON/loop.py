@@ -11,13 +11,13 @@
 ##     if(s % 5 == 0):
 ##         print()
 ##
-s = 0
-for i in range(1,26):
-    for j in range(i + 5):
-        print("{:2d}". format(j),end = ' ')
-    s +=1
-    if(s % 5 == 0):
-         print()
+##s = 0
+##for i in range(1,26):
+##    for j in range(i + 5):
+##        print("{:2d}". format(j),end = ' ')
+##    s +=1
+##    if(s % 5 == 0):
+##         print()
 ##for i in range(2, 11, 2):
 ##    print("{:2d}". format(i),end = " ")
 ##    s += 1
@@ -60,9 +60,14 @@ for i in range(1,26):
 
 
 # Loop through rows
-##for i in range(1, 6):
-##    
-##    # Loop to print pattern
-##    for j in range(1, 3):
-##        print(i, j, end=' ')
-##    print()
+# for i in range(1, 6):
+#    # Loop to print pattern
+#    for j in range(1, 3):
+#        print(i, j, end=' ')
+#    print()
+
+
+for i in range(0,5):
+    for j in range(i):
+        print("*",end = "")
+    print()

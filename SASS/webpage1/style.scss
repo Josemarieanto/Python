@@ -1,0 +1,226 @@
+body{
+    background-image: url(https://preview.colorlib.com/theme/travello/images/home_slider.jpg.webp);
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 20px;
+    color: white;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: rgba(128, 128, 128, 0.323);
+
+    .nav{
+        display: flex;
+        gap: 50px;
+        font-family: sans-serif;
+        font-size: 18px;
+    }
+
+    h2{
+        font-family: sans-serif;
+        font-size: 30px;
+    }
+
+    h2:hover{
+        text-decoration: underline;
+    }
+
+    .nav p:hover{
+        text-decoration: underline;
+    }
+
+    .contact:hover{
+        text-decoration: underline;
+    }
+
+    .contact{
+        font-family: sans-serif;
+        font-size: 18px;
+    }
+
+}
+
+.content {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 80px;
+    color: white;
+    display: flex;
+    padding-top: 80px;
+    letter-spacing: 0.3px;
+    justify-content: center;
+
+}
+
+.details p{
+    color: white;
+    font-size: 18px;
+    position: relative;
+    left: 1300px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.details p:hover{
+    text-decoration: underline;   
+}
+
+.search{
+    height: 200px;
+    width: 1300px;
+    background-color:rgba(255, 255, 255, 0.213) ;
+    position: absolute;
+    top: 600px;
+    left: 100px;
+}
+
+.p1{
+    color: black;
+    font-size: 20px;
+    font-family: sans-serif;
+    height: 50px;
+    width: 200px;
+    background-color: white;
+    position:relative;
+    left: 550px;
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 10px;
+}
+
+.input{
+    position: relative;
+    left:100px;
+    height: 60px;
+    width: 950px;
+    background-color: white;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+.input input{
+    background-color: rgba(128, 128, 128, 0.281);
+    text-align: center;
+    font-size: 18px;
+    border: none;
+}
+
+.button{
+    float: right;
+    position: relative;
+    right: 20px;
+    bottom: 70px;
+    height: 60px;
+    width: 170px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.button:hover{
+    cursor: pointer;
+}
+
+.beach img{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 350px;
+    left: 100px;
+}
+
+.beach p{
+    position: relative;
+    top: 280px;
+    left: 200px;
+    gap: 300px;
+}
+
+.pa1{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.pa2{
+    color: rgba(0, 0, 0, 0.504);
+}
+
+.purse img{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 195px;
+    left: 500px;
+}
+
+.purse p{
+    position: relative;
+    top: 140px;
+    left: 600px;
+    gap: 300px;
+}
+
+.suitcase img{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 60px;
+    left: 1000px;
+}
+
+.suitcase p{
+    display: flex;
+    justify-content: end;
+    position: relative;
+    right: 250px;
+}
+
+.container h2{
+    position: relative;
+    left: 600px;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-left: 30px;
+}
+
+.container img{
+    width: 300px;
+}
+
+.card1 img, .card2 img, .card3 img{
+    height: 200px;
+}
+
+.card4 img, .card5 img, .card6 img{
+    height: 200px;
+}
+
+.par{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+
+
+
+
+
+
+
+

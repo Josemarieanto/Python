@@ -6,7 +6,7 @@
     align-items: center;
 }
 
-.card{
+.card-instagram ,.card-twitter, .card-youtube{
     display: flex;
     flex-direction: column;
     height: 370px;
@@ -14,7 +14,6 @@
     border: 2px solid black;
     border-radius: 10px;
     max-width: 400px;
-
 }
 
 .logo a{
@@ -62,7 +61,7 @@ button{
     transition: 0.3s ease;
 }
 
-.card:hover{
+.card-instagram:hover{
     .logo a ion-icon{
         color: white;
     }
@@ -75,3 +74,27 @@ button{
     color: white;
 }
 
+.card-twitter:hover{
+    .logo a ion-icon{
+        color: white;
+    }
+
+    button{
+        background-color: white;
+        color: rgb(14, 92, 216);
+    }
+    background-color: rgb(14,92,216);
+    color: white;
+}
+.card-youtube:hover{
+    .logo a ion-icon{
+        color: white;
+    }
+
+    button{
+        background-color: white;
+        color: rgb(214, 9, 9);
+    }
+    background-color: rgb(214, 9, 9);
+    color: white;
+}
