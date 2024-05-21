@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  margin: 0;
+  background-color: rgb(239, 239, 239);
+  background-image: url(https://t4.ftcdn.net/jpg/02/92/20/37/360_F_292203735_CSsyqyS6A4Z9Czd4Msf7qZEhoxjpzZl1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.max-width {
+    max-width: 1300px;
+    width: 98%;
+    margin-inline: auto;
+}
+
+.name{
+    display: flex;
+    justify-content: center;
+    color: rgb(230, 16, 16);
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.breakfast{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.lunch{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.dinner{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding-bottom: 80px;
+}
+
+.card-item {
+    flex-basis: 300px;
+    background-color: white;
+}
+
+.card-item .image {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-item .content {
+  padding: 10px;
+}
+
+.card-item .content .title {
+  font-size: 12px;
+  color: #8b94e8;
+}
+
+.card-item .content .description {
+  color: rgba(0, 0, 0, 0.639);
+}
+
+.card-item .content .profile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card-item .content .profile .avatar {
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.card-item .content .profile .details > * {
+  margin-block: 5px;
+}
+
+.details{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 1000px) {
+    .card-list {
+      flex-wrap: wrap;
+    }
+  
+    .card-item {
+      flex-basis: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .card-item {
+      flex-basis: 100%;
+    }
+  }
