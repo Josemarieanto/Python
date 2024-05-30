@@ -1,0 +1,35 @@
+from pymongo.mongo_client import MongoClient
+from pymongo.server_api import ServerApi
+
+uri = "mongodb+srv://josemarie:rgYQ9SNztsnRiuYi@atlascluster.45jrjqo.mongodb.net/?retryWrites=true&w=majority&appName=AtlasCluster"
+
+# Create a new client and connect to the server
+client = MongoClient(uri, server_api=ServerApi('1'))
+
+# Send a ping to confirm a successful connection
+try:
+    client.admin.command('ping')
+    print("Pinged your deployment. You successfully connected to MongoDB!")
+except Exception as e:
+    print(e)
+
+db = client["PY_DB"]
+
+students = db["Students"]
+
+doc = {
+    "name": "xyz",
+    "age": 15,
+    "address": {
+        "doorNo": 10,
+        "street": "vengateshwara nagar",
+        "area": "saram",
+        "city": "puducherry",
+    },
+    "skills": ["PY", "JAVA"],
+    "phoneNumber": "+91 9876543210",
+}
+
+###### create(adding single document)
+
+students.insert_one(doc)
